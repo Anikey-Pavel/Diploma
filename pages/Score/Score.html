@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/Score.css">
+	<link rel="stylesheet" href="../../css/common-styles.css">
+	<title>Напольные покрытия</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<a class="back_to_top" title="Наверх">
+			<img src="images/icons/icons8-up-65.png" alt="">
+		</a>
+		<div class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<div class="menu__body">
+						<ul class="menu__list">
+							<li>
+								<a class="menu__link" href="#contact" title="Контакты">Контакты</a>
+								<span class="menu__arrow arrow"></span>
+								<ul class="sub-menu__list">
+									<li>
+										<a class="sub-menu__link" href="tel:+375(29)111-11-11"
+											title="Позвонить">+375(29)111-11-11</a>
+									</li>
+									<li>
+										<a class="sub-menu__link" href="tel:+375(33)222-22-22"
+											title="Позвонить">+375(33)222-22-22</a>
+									</li>
+									<li>
+										<a class="sub-menu__link" href="tel:+375(25)333-33-33"
+											title="Позвонить">+375(25)333-33-33</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="menu__link" href="../../index.html" title="Главная">Главная</a>
+							</li>
+							<li>
+								<a class="menu__link" href="../Score/Score.html" title="Магазины">Магазины</a>
+							</li>
+							<li>
+								<a class="menu__form-link" href="#" onclick="show('block')" title="Регистрация">Регистрация</a>
+								<div id="opacity" onclick="show('none')">
+								</div>
+								<div id="window">
+									<img class="window__close" src="images/icons/icons8-закрыть-окно-24.png" alt="close"
+										title="Закрыть" onclick="show('none')">
+									<div class="window__form">
+										<h2>Регистрация</h2>
+										<form method="post" name="registration">
+											<input type="text" placeholder="Имя" name="name1" class="input" required
+												pattern="[а-яА-Я]+"
+												title="Имя должно содержать русские буквы нижнего либо верхнего регистра">
+											<input type="text" placeholder="Фамилия" name="name2" class="input" required
+												pattern="[а-яА-Я]+"
+												title="Имя должно содержать русские буквы нижнего либо верхнего регистра">
+											<input type="email" placeholder="Email" name="email1" class="input" required>
+											<input type="email" placeholder="Подтвердите Email" name="email2" class="input"
+												required>
+											<input type="password" placeholder="Пароль" name="pass1" class="input" required
+												minlength="8" maxlength="128">
+											<input type="password" placeholder="Подтвердите пароль" name="pass2" class="input"
+												required minlength="8" maxlength="128">
+											<input type='tel' placeholder="Мобильный телефон" name="tel" class="input" required>
+											<br>
+											<input type="radio" name="radio1" required> Мужчина
+											<br>
+											<input type="radio" name="radio1" class="radio" required> Женщина
+											<br>
+											<input type="submit" value="Регистрация" name="sab" class="input">
+										</form>
+									</div>
+								</div>
+							</li>
+							<li>
+
+							</li>
+						</ul>
+					</div>
+					<div id="weather" class="weather"></div>
+				</div>
+				<a href="../Диплом/index.html" class="header__title" title="Главная">Напольные покрытия</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content__container">
+				<div class="content__header">Магазины</div>
+				<div class="line"></div>
+				<div class="content__item item">
+					<div class="item__content">
+						<div class="item__hover">
+							<div class="item__header">Стройка</div>
+							<a target="_blank" href="https://stroi-ka.by/" class="item__link"
+								title="https://stroi-ka.by/">Перейти</a>
+						</div>
+					</div>
+					<div class="item__content">
+						<div class="item__hover">
+							<div class="item__header">ОМА</div>
+							<a target="_blank" href="https://www.oma.by/" class="item__link"
+								title="https://www.oma.by/">Перейти</a>
+						</div>
+					</div>
+					<div class="item__content">
+						<div class="item__hover">
+							<div class="item__header">KSK</div>
+							<a target="_blank" href="https://ksk.by/" class="item__link" title="https://ksk.by/">Перейти</a>
+						</div>
+					</div>
+					<div class="item__content">
+						<div class="item__hover">
+							<div class="item__header">Сильный пол</div>
+							<a target="_blank" href="https://spol.by/" class="item__link" title="https://spol.by/">Перейти</a>
+						</div>
+					</div>
+					<div class="item__content">
+						<div class="item__hover">
+							<div class="item__header">Black Steel</div>
+							<a target="_blank" href="https://bsteel.by/" class="item__link"
+								title="https://bsteel.by/">Перейти</a>
+						</div>
+					</div>
+					<div class="item__content">
+						<div class="item__hover">
+							<div class="item__header">ПроДекор</div>
+							<a target="_blank" href="https://prodekor.by/" class="item__link"
+								title="https://prodekor.by/">Перейти</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer__container">
+				<div class="footer__header">
+					<p>&#169; Аникей Павел 2022</p>
+				</div>
+				<div class="footer__content content-footer">
+					<div class="content-footer__items">
+						<div class="content-footer__column">
+							<div>
+								<img src="images/icons/icons8-vk-в-круге.svg" alt="ВКонтакте" title="ВКонтакте">
+								<a target="_blank" href="https://vk.com/id622785628" title="https://vk.com/id622785628">Павел
+									Аникей</a>
+							</div>
+							<div>
+								<img src="images/icons/icons8-instagram.svg" alt="Instagram" title="Instagram">
+								<a target="_blank" href="https://www.instagram.com/pavel.anikey"
+									title="https://www.instagram.com/pavel.anikey">pavel.anikey</a>
+							</div>
+							<div>
+								<img src="images/icons/icons8-телеграмма-app.svg" alt="Telegram" title="Telegram">
+								<a target="_blank" href="https://t.me/Anikey22" title="https://t.me/Anikey22">Pavel Anikey</a>
+							</div>
+						</div>
+						<div id="contact" class="content-footer__column">
+							<div>
+								<a href="tel:+375 (29) 111-11-11" title="Позвонить">+375 (29) 111-11-11</a>
+							</div>
+							<div>
+								<a href="tel:+375 (29) 222-22-22" title="Позвонить">+375 (33) 222-22-22</a>
+							</div>
+
+							<div>
+								<a href="tel:+375 (29) 333-33-33" title="Позвонить">+375 (25) 333-33-33</a>
+							</div>
+						</div>
+						<div class="content-footer__column">
+							<div>
+								<a href="../laminat/laminate.html" title="Ламинат">Ламинат</a>
+							</div>
+
+							<div>
+								<a href="../Linoleum/Linoleum.html" title="Линолиум">Линолиум</a>
+							</div>
+							<div>
+								<a href="../Tile/Tile.html" title="Плитка">Плитка</a>
+							</div>
+						</div>
+						<div class="content-footer__column">
+							<div>
+								<a href="../Parquet/Parquet.html" title="Паркет">Паркет</a>
+							</div>
+
+							<div>
+								<a href="../Cork floor/cork-floor.html" title="Пробковый пол">Пробковый пол</a>
+							</div>
+							<div>
+								<a href="../Quartz vinyl/Quartz-vinyl.html" title="Кварц винил">Кварц винил</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/Score.js"></script>
+</body>
+
+</html>

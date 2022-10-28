@@ -1,0 +1,206 @@
+.content {
+	flex: 1 1 auto;
+}
+
+.content__container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 0 15px 0;
+}
+
+
+.content__header {
+	font-size: 40px;
+	text-align: center;
+	margin: 20px 0;
+	font-weight: 700;
+}
+
+.line {
+	height: 2px;
+	background-color: black;
+	margin: 0 0 15px 0;
+}
+
+.content__item {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 300px 300px 300px;
+}
+
+.item__content {
+	text-align: center;
+}
+
+.item__hover {
+	opacity: 0;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	transition-duration: 1s;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	justify-content: center;
+	align-content: center;
+}
+
+.item__content:hover .item__hover {
+	opacity: 1;
+	overflow: auto;
+}
+
+.item__content:nth-child(1) {
+	background: url('../images/Стройка.jpg') no-repeat;
+	background-size: 100%;
+}
+
+.item__content:nth-child(2) {
+	background: url('../images/ОМА.jpg') no-repeat;
+	background-size: 100%;
+}
+
+.item__content:nth-child(3) {
+	background: url('../images/KSK.jpg') no-repeat;
+}
+
+.item__content:nth-child(4) {
+	background: url('../images/Сильный-пол.jpg') no-repeat;
+	background-size: 100%;
+}
+
+.item__content:nth-child(5) {
+	background: url('../images/black-steel.jpg') no-repeat;
+	background-size: 100%;
+}
+
+.item__content:nth-child(6) {
+	background: url('../images/ПроДекор.jpg') no-repeat;
+	background-size: 100%;
+}
+
+.item__header {
+	font-size: 2.5rem;
+	color: white;
+	border: 2px solid white;
+}
+
+.item__link {
+	text-decoration: none;
+	color: white;
+	font-size: 2rem;
+	transition-duration: 0.5s;
+	border: 2px solid white;
+}
+
+.item__link:hover {
+	text-decoration: underline;
+	color: #d2b48c;
+}
+
+@media(max-width:1300px) {
+	.content__container {
+		padding: 0 15px;
+	}
+}
+
+@media(max-width:1100px) {
+	.content__item {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 300px 300px 300px 300px 300px 300px;
+	}
+}
+
+@media(max-width:876px) {
+
+	.item__hover {
+		opacity: 1;
+		overflow: auto;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.item__link {
+		text-decoration: underline;
+		color: #d2b48c;
+	}
+}
+
+@media(max-width:415px) {
+
+	.item__hover {
+		display: grid;
+		grid-template-columns: 100%;
+	}
+
+	.item__link {
+		margin: 30px 0 0 0;
+	}
+}
+
+@media(max-width:568px) {
+	.item__content:nth-child(1) {
+		background: url('../images/Стройка.jpg') no-repeat;
+		background-size: 150%;
+	}
+
+	.item__content:nth-child(2) {
+		background: url('../images/ОМА.jpg') no-repeat;
+		background-size: 150%;
+	}
+
+	.item__content:nth-child(3) {
+		background: url('../images/KSK.jpg') no-repeat;
+	}
+
+	.item__content:nth-child(4) {
+		background: url('../images/Сильный-пол.jpg') no-repeat;
+		background-size: 150%;
+	}
+
+	.item__content:nth-child(5) {
+		background: url('../images/black-steel.jpg') no-repeat;
+		background-size: 150%;
+	}
+
+	.item__content:nth-child(6) {
+		background: url('../images/ПроДекор.jpg') no-repeat;
+		background-size: 150%;
+	}
+}
+
+@media(max-width:385px) {
+	.item__content:nth-child(1) {
+		background: url('../images/Стройка.jpg') no-repeat;
+		background-size: 200%;
+	}
+
+	.item__content:nth-child(2) {
+		background: url('../images/ОМА.jpg') no-repeat;
+		background-size: 200%;
+	}
+
+	.item__content:nth-child(3) {
+		background: url('../images/KSK.jpg') no-repeat;
+	}
+
+	.item__content:nth-child(4) {
+		background: url('../images/Сильный-пол.jpg') no-repeat;
+		background-size: 200%;
+	}
+
+	.item__content:nth-child(5) {
+		background: url('../images/black-steel.jpg') no-repeat;
+		background-size: 200%;
+	}
+
+	.item__content:nth-child(6) {
+		background: url('../images/ПроДекор.jpg') no-repeat;
+		background-size: 200%;
+	}
+}
