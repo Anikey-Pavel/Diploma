@@ -10,7 +10,6 @@ if (iconMenu) {
 		menuBody.classList.toggle('_active');
 	});
 }
-
 //-------------Выподающие меню---------------------------------------
 
 let isMobile = {
