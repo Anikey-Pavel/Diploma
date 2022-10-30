@@ -155,3 +155,8 @@ if (weatherBlock) {
 
 
 //-------------Регистрация-------------------------
+
+function show(state) {
+	document.getElementById('window').style.display = state
+	document.getElementById('opacity').style.display = state
+}

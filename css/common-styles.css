@@ -220,7 +220,7 @@ body._lock {
 	transition-duration: 1s;
 }
 
-.sub-menu__list a:hover {
+.sub-menu__link a:hover {
 	text-decoration: underline;
 }
 
@@ -228,7 +228,11 @@ body._lock {
 	background-color: #cb9763;
 }
 
-.sub-menu__list li a {
+#contact {
+	cursor: pointer;
+}
+
+.sub-menu__link {
 	display: inline-block;
 	padding: 10px 0;
 }
