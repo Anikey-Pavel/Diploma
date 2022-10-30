@@ -10,6 +10,17 @@ if (iconMenu) {
 		menuBody.classList.toggle('_active');
 	});
 }
+
+let menu = document.getElementById('menu')
+let contact = document.getElementById('contact')
+let burger = document.getElementById('burger')
+
+contact.addEventListener('click', () => {
+	menu.classList.remove('_active')
+	burger.classList.remove('_active')
+	window.scrollTo(0, document.body.scrollHeight);
+})
+
 //-------------Выподающие меню---------------------------------------
 
 let isMobile = {
@@ -144,9 +155,3 @@ if (weatherBlock) {
 
 
 //-------------Регистрация-------------------------
-
-
-function show(state) {
-	document.getElementById('window').style.display = state
-	document.getElementById('opacity').style.display = state
-}
