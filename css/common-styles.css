@@ -418,6 +418,75 @@ body.touch .arrow {
 
 .radio {
 	margin-bottom: 10px;
+	/* display: none; */
+}
+
+.radio {
+	display: inline-block;
+	margin-bottom: 5px;
+	position: relative;
+}
+
+.radio__input {
+	appearance: none;
+	position: absolute;
+}
+
+.radio__label {
+	padding-left: 25px;
+	cursor: pointer;
+}
+
+.radio__label::before {
+	content: '';
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 3px;
+	left: 0px;
+	border-radius: 5px;
+	z-index: 1;
+	border-radius: 50%;
+	background-color: aliceblue;
+	box-shadow: 1px 1px 8px black;
+}
+
+.radio__label::after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 6px;
+	left: 3px;
+	background-color: rgb(194, 130, 52);
+	border-radius: 4px;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transition: 0.3s linear;
+	-webkit-transition: 0.3s linear;
+	-moz-transition: 0.3s linear;
+	-ms-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+	z-index: 2;
+	border-radius: 50%;
+}
+
+.radio__input:checked+.radio__label:after {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transition: .1s ease 0s;
+	-webkit-transition: .1s ease 0s;
+	-moz-transition: .1s ease 0s;
+	-ms-transition: .1s ease 0s;
+	-o-transition: .1s ease 0s;
 }
 
 .weather {

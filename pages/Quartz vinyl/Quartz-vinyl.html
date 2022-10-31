@@ -75,9 +75,15 @@
 												required minlength="8" maxlength="128">
 											<input type='tel' placeholder="Мобильный телефон" name="tel" class="input" required>
 											<br>
-											<input type="radio" name="radio1" required> Мужчина
+											<span class="radio">
+												<input checked class="radio__input" type="radio" name="1" id="radio_1">
+												<label class="radio__label" for="radio_1">Мужчина</label>
+											</span>
 											<br>
-											<input type="radio" name="radio1" class="radio" required> Женщина
+											<span class="radio">
+												<input checked class="radio__input" type="radio" name="1" id="radio_2">
+												<label class="radio__label" for="radio_2">Женщина</label>
+											</span>
 											<br>
 											<input type="submit" value="Регистрация" name="sab" class="input">
 										</form>
